@@ -5,7 +5,7 @@ This is a Next.js hook that returns the pathname of the current URL and works on
 We will import this from next/navigation
 And we will assign this to a variable
 
-<!-- "use client"
+"use client"
 import { usePathname } from 'next/navigation';
 
 const MyComponent = () => {
@@ -18,7 +18,7 @@ const MyComponent = () => {
     )
 }
 
-export default MyComponent; -->
+export default MyComponent;
 
 
 2) useParams
@@ -41,7 +41,7 @@ folder Structure ( Route Setup )
 │ │ ├── 📄 page.js
 
 
-<!-- "use client";
+"use client";
 import { useParams } from "next/navigation";
 
 export default function ProductPage() {
@@ -52,11 +52,11 @@ export default function ProductPage() {
       <h1>Product ID: {params.id}</h1>
     </div>
   );
-} -->
+}
 
 
 output
-<!-- Product ID: 123 -->
+Product ID: 123
 
 
 3) useSearchParams
@@ -77,7 +77,7 @@ Folder Structure
 
 
 URL--->  http://localhost:3000/products?category=mobile&brand=samsung
-<!-- 
+
 "use client";
 import { useSearchParams } from "next/navigation";
 
@@ -94,12 +94,13 @@ export default function ProductsPage() {
       <p>Brand: {brand}</p>
     </div>
   );
-} -->
+}
 
-output
-<!-- Products Page
+output-->
+
+Products Page
 Category: mobile
-Brand: samsung -->
+Brand: samsung
 
 
 
@@ -109,7 +110,7 @@ This is used to go from one page to another
 This only works in client-side components
 Should be imported from next/navigation
 
-<!-- "use client";
+"use client";
 import { useRouter } from "next/navigation";
 
 export default function HomePage() {
@@ -125,4 +126,4 @@ export default function HomePage() {
       <button onClick={goToProducts}>Go to Products</button>
     </div>
   );
-} -->
+}
